@@ -11,8 +11,7 @@ public class TwoDimentionDemo3 {
         for (int i = 0; i < arr.length; i++) {
             sum += getSum(arr[i]);
         }
-        // System.out.println("sum=" + sum);
-        System.out.println(sum);
+        System.out.println("sum=" + sum);
     }
 
     public static int getSum(int[] arr) {
