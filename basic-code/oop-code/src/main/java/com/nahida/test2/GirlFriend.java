@@ -5,17 +5,17 @@ public class GirlFriend {
     private int age;
     private String gender;
 
-    public void setName(String n) {
-        name = n;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
-    public void setAge(int a) {
-        if (a >= 18 && a <= 50) {
-            age = a;
+    public void setAge(int age) {
+        if (age >= 18 && age <= 50) {
+            this.age = age;
         } else {
             System.out.println("Invalid age");
 
@@ -23,15 +23,15 @@ public class GirlFriend {
     }
 
     public int getAge() {
-        return age;
+        return this.age;
     }
 
-    public void setGender(String g) {
-        gender = g;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getGender() {
-        return gender;
+        return this.gender;
     }
 
     public void sleep() {
