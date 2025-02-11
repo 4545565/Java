@@ -22,7 +22,7 @@ public class Test8 {
         for (Phone p : list) {
             if (p.getPrice() < 3000) {
                 newList.add(p);
-            
+            }
         }
         return newList;
     }
