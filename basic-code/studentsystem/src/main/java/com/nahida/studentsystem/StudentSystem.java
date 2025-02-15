@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StudentSystem {
+    private static final String ADD_STUDENT = "1";
+    private static final String DELETE_STUDENT = "2";
+    private static final String MODIFY_STUDENT = "3";
+    private static final String SEARCH_STUDENT = "4";
+    private static final String EXIT = "5";
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in, "GBK");
         ArrayList<Student> list = new ArrayList<>();
@@ -18,11 +24,11 @@ public class StudentSystem {
             System.out.println("请输入你的选择：");
             choose = sc.next();
             switch (choose) {
-                case "1" -> add(list, sc);
-                case "2" -> delete(list, sc);
-                case "3" -> modify(list, sc);
-                case "4" -> search(list, sc);
-                case "5" -> {
+                case ADD_STUDENT -> add(list, sc);
+                case DELETE_STUDENT -> delete(list, sc);
+                case MODIFY_STUDENT -> modify(list, sc);
+                case SEARCH_STUDENT -> search(list, sc);
+                case EXIT -> {
                     System.out.println("退出系统");
                     try {
                         sc.close();
